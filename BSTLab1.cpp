@@ -8,13 +8,21 @@ class Node {
 		// the Node should contain
 		// 	- an integer "key" that holds the value of the Node
 		// 	- a pointer to each child possible child node ("right" and "left")
-
+    int key;
+	Node *right;
+	Node *left;
 
 		// Write a constructor for the Node
 		// input: only an integer value for "key", no pointer arguments
 		// 		right and left pointers should be null
-
+	    Node(int value) {
+        key = value;
+        left = nullptr;
+        right = nullptr;
+    }
 };
+
+
 
 
 // Use this function to create a Binary Search Tree (BST) tree with the following values
@@ -22,7 +30,8 @@ class Node {
 Node* createTree() {
 	// root
 	Node *root = nullptr;
-
+	int nums[] = {13, 0, 7, 6, 21, 15, -2, 12, 99, 18, 19, -1};
+    
 	// level 1 (children of root)
 
 	// level 2 (children of 0)
