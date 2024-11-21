@@ -63,6 +63,7 @@ Node* createTree() {
 // You should write this function recursively! What is the base case? What is the general case?
 bool searchTree(int target, Node* root) {
 	// Base cases
+	if(root == nullptr)
 	return false;
 
 	// General case
@@ -77,10 +78,10 @@ bool searchTree(int target, Node* root) {
 int treeSize(Node* root) {
 	// base case
 	return -1;
-
+ 
 	// General case
 	return -1;
-
+ 
 }
 
 // BONUS! Write a function that will determine the height of the tree
